@@ -1,0 +1,344 @@
+{
+  "success" : true,
+
+  "project" : {
+    "calendar"     : "general",
+    "startDate"    : "2021-06-14",
+    "hoursPerDay"  : 24,
+    "daysPerWeek"  : 5,
+    "daysPerMonth" : 20
+  },
+
+  "calendars" : {
+    "rows" : [
+      {
+        "id"        : "general",
+        "name"      : "General",
+        "intervals" : [
+          {
+            "recurrentStartDate" : "on Sat at 0:00",
+            "recurrentEndDate"   : "on Mon at 0:00",
+            "isWorking"          : false
+          }
+        ],
+        "expanded" : true,
+        "children" : [
+          {
+            "id"           : "business",
+            "name"         : "Business",
+            "intervals"    : [
+              {
+                "recurrentStartDate" : "every weekday at 12:00",
+                "recurrentEndDate"   : "every weekday at 13:00",
+                "isWorking"          : false
+              },
+              {
+                "recurrentStartDate" : "every weekday at 17:00",
+                "recurrentEndDate"   : "every weekday at 08:00",
+                "isWorking"          : false
+              }
+            ]
+          },
+          {
+            "id"           : "night",
+            "name"         : "Night shift",
+            "intervals"    : [
+              {
+                "recurrentStartDate" : "every weekday at 6:00",
+                "recurrentEndDate"   : "every weekday at 22:00",
+                "isWorking"          : false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "tasks" : {
+    "rows" : [
+      {
+        "id": 1000,
+        "name": "Launch Visum Test",
+        "percentDone": 50,
+        "startDate": "2021-06-14",
+        "expanded": true,
+        "children": [
+          {
+            "id": 1,
+            "name": "Setup Backend / AWS",
+            "percentDone": 50,
+            "duration": 10,
+            "startDate": "2021-06-14",
+            "rollup": true,
+            "endDate": "2021-06-23",
+            "expanded": true,
+            "children": [
+              {
+                "id": 11,
+                "name": "Configure DocumentDB",
+                "percentDone": 50,
+                "startDate": "2021-06-14",
+                "rollup": true,
+                "duration": 3,
+                "color": "teal",
+                "endDate": "2021-06-17",
+                "cost": 200
+              },
+              {
+                "id": 12,
+                "name": "Configure CRUD API",
+                "percentDone": 50,
+                "startDate": "2021-06-14",
+                "rollup": true,
+                "duration": 3,
+                "endDate": "2021-06-17",
+                "showInTimeline": true,
+                "cost": 1000
+              },
+              {
+                "id": 13,
+                "name": "Configure Cognito authentication",
+                "percentDone": 50,
+                "startDate": "2021-06-14",
+                "rollup": true,
+                "duration": 3,
+                "endDate": "2021-06-17",
+                "cost": 1200
+              },
+              {
+                "id": 14,
+                "name": "Configure API Gateway, Routing, REST API, Auth",
+                "percentDone": 50,
+                "startDate": "2021-06-14",
+                "rollup": true,
+                "duration": 2,
+                "endDate": "2021-06-16",
+                "cost": 750
+              },
+              {
+                "id": 15,
+                "name": "Run tests",
+                "percentDone": 0,
+                "startDate": "2021-06-21",
+                "rollup": true,
+                "duration": 2,
+                "endDate": "2021-06-23",
+                "cost": 5000
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Setup Frontend",
+            "percentDone": 60,
+            "startDate": "2021-06-23",
+            "rollup": true,
+            "endDate": "2021-06-13",
+            "expanded": true,
+            "children": [
+              {
+                "id": 21,
+                "name": "Create React App",
+                "percentDone": 70,
+                "startDate": "2021-06-23",
+                "rollup": true,
+                "duration": 5,
+                "endDate": "2021-06-30",
+                "cost": 500
+              },
+              {
+                "id": 22,
+                "name": "Deploy client side files and REST functions via npm + AWS extensions",
+                "percentDone": 60,
+                "startDate": "2021-06-30",
+                "rollup": true,
+                "duration": 1,
+                "endDate": "2021-06-31",
+                "cost": 1000
+              },
+              {
+                "id": 23,
+                "name": "Setup S3 client side file hosting",
+                "percentDone": 50,
+                "startDate": "2021-06-31",
+                "rollup": true,
+                "duration": 2,
+                "showInTimeline": true,
+                "endDate": "2021-06-02",
+                "cost": 1000
+              },
+              {
+                "id": 24,
+                "name": "Setup hosting",
+                "percentDone": 0,
+                "startDate": "2021-06-04",
+                "rollup": true,
+                "duration": 7,
+                "endDate": "2021-06-13",
+                "cost": 11000
+              }
+            ]
+          }
+        ],
+        "endDate": "2021-06-16"
+      }
+    ]
+  },
+
+  "dependencies" : {
+    "rows" : [
+      {
+        "id"       : 1,
+        "fromTask" : 11,
+        "toTask"   : 15,
+        "lag"      : 2
+      },
+      {
+        "id"       : 2,
+        "fromTask" : 12,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 3,
+        "fromTask" : 13,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 4,
+        "fromTask" : 14,
+        "toTask"   : 15
+      },
+      {
+        "id"       : 5,
+        "fromTask" : 15,
+        "toTask"   : 21
+      },
+      {
+        "id"       : 7,
+        "fromTask" : 21,
+        "toTask"   : 22
+      },
+      {
+        "id"       : 8,
+        "fromTask" : 22,
+        "toTask"   : 23
+      },
+      {
+        "id"       : 9,
+        "fromTask" : 23,
+        "toTask"   : 24
+      },
+      {
+        "id"       : 10,
+        "fromTask" : 24,
+        "toTask"   : 25
+      },
+      {
+        "id"       : 11,
+        "fromTask" : 31,
+        "toTask"   : 331
+      },
+      {
+        "id"       : 111,
+        "fromTask" : 31,
+        "toTask"   : 332
+      },
+      {
+        "id"       : 112,
+        "fromTask" : 31,
+        "toTask"   : 333
+      },
+      {
+        "id"       : 113,
+        "fromTask" : 31,
+        "toTask"   : 334
+      },
+      {
+        "id"       : 12,
+        "fromTask" : 400,
+        "toTask"   : 401
+      },
+      {
+        "id"       : 13,
+        "fromTask" : 401,
+        "toTask"   : 402
+      },
+      {
+        "id"       : 15,
+        "fromTask" : 3,
+        "toTask"   : 4
+      },
+      {
+        "id"       : 16,
+        "fromTask" : 41,
+        "toTask"   : 45
+      },
+      {
+        "id"       : 17,
+        "fromTask" : 42,
+        "toTask"   : 45
+      },
+      {
+        "id"       : 18,
+        "fromTask" : 43,
+        "toTask"   : 45
+      },
+      {
+        "id"       : 19,
+        "fromTask" : 44,
+        "toTask"   : 45
+      },
+      {
+        "id"       : 20,
+        "fromTask" : 4034,
+        "toTask"   : 4035
+      }
+    ]
+  },
+
+  "resources" : {
+    "rows" : [
+      { "id" : 1, "name" : "Celia", "city" : "Barcelona", "calendar" : null, "image" : "celia.jpg" },
+      { "id" : 2, "name" : "Lee", "city" : "London", "calendar" : null, "image" : "lee.jpg"  },
+      { "id" : 3, "name" : "Macy", "city" : "New York","calendar" : null, "image" : "macy.jpg"  },
+      { "id" : 4, "name" : "Madison", "city" : "Barcelona", "calendar" : null,"image" : "madison.jpg"  },
+      { "id" : 5, "name" : "Rob", "city" : "Rome", "calendar" : "business", "image" : "rob.jpg"  },
+      { "id" : 6, "name" : "Dave", "city" : "Barcelona", "calendar" : "night", "image" : "dave.jpg"  },
+      { "id" : 7, "name" : "Dan", "city" : "London", "calendar" : "night", "image" : "dan.jpg"  },
+      { "id" : 8, "name" : "George", "city" : "New York", "calendar" : null, "image" : "george.jpg"  },
+      { "id" : 9, "name" : "Gloria", "city" : "Rome", "calendar" : null, "image" : "gloria.jpg"  },
+      { "id" : 10, "name" : "Henrik", "city" : "London", "calendar" : null, "image" : "henrik.jpg"  }
+    ]
+  },
+
+  "assignments" : {
+    "rows" : [
+      { "id" : 1, "event" : 11,  "resource" : 1 },
+      { "id" : 2, "event" : 4033,  "resource" : 1 },
+      { "id" : 3, "event" : 12,  "resource" : 9 },
+      { "id" : 4, "event" : 13,  "resource" : 2 },
+      { "id" : 5, "event" : 13,  "resource" : 3 },
+      { "id" : 6, "event" : 13,  "resource" : 6 },
+      { "id" : 7, "event" : 13,  "resource" : 7 },
+      { "id" : 8, "event" : 13,  "resource" : 8 },
+      { "id" : 9, "event" : 21,  "resource" : 5 },
+      { "id" : 10, "event" : 21,  "resource" : 9 },
+      { "id" : 11, "event" : 22,  "resource" : 8 },
+      { "id" : 12, "event" : 25,  "resource" : 3 }
+    ]
+  },
+
+  "timeRanges"    : {
+    "rows": [
+      {
+        "id"       : 1,
+        "name"     : "Important date",
+        "startDate": "2021-05-30",
+        "duration" : 0,
+        "durationUnit" : "d",
+        "cls"      : "b-fa b-fa-diamond"
+      }
+    ]
+  }
+}
