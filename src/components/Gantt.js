@@ -40,7 +40,7 @@ const Gantt = props => {
         endDate                 : '2021-07-30',
         resourceImageFolderPath : 'users/',
         columns                 : [
-            { type: 'id' },
+            { type: 'wbs' },
             { type: 'name', width: 250 },
             { type: 'startdate' },
             { type: 'duration' },

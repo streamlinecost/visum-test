@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "./static/css/main.9824952f.chunk.css",
-    "main.js": "./static/js/main.50eeee9c.chunk.js",
+    "main.js": "./static/js/main.46714f9d.chunk.js",
     "runtime-main.js": "./static/js/runtime-main.2fbec041.js",
     "static/js/2.66cd4d31.chunk.js": "./static/js/2.66cd4d31.chunk.js",
     "index.html": "./index.html",
-    "precache-manifest.844fb634a08a526d50e07bf1ca012083.js": "./precache-manifest.844fb634a08a526d50e07bf1ca012083.js",
+    "precache-manifest.16e2a7aaa019d462fa3f568bebbc3366.js": "./precache-manifest.16e2a7aaa019d462fa3f568bebbc3366.js",
     "service-worker.js": "./service-worker.js",
     "static/js/2.66cd4d31.chunk.js.LICENSE.txt": "./static/js/2.66cd4d31.chunk.js.LICENSE.txt",
     "static/media/App.scss": "./static/media/logo_bryntum_bw.3784cc4c.png"
@@ -14,6 +14,6 @@
     "static/js/runtime-main.2fbec041.js",
     "static/js/2.66cd4d31.chunk.js",
     "static/css/main.9824952f.chunk.css",
-    "static/js/main.50eeee9c.chunk.js"
+    "static/js/main.46714f9d.chunk.js"
   ]
 }
