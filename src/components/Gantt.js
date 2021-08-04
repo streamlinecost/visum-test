@@ -21,16 +21,14 @@ const Gantt = props => {
         dependencyIdField : 'wbsCode',
 
         project: {
-            // Let the Project know we want to use our own Task model with custom fields / methods
             taskModelClass : Task,
             transport      : {
                 load: {
-                    url : 'data/visum-test-data.json'
+                    url : 'https://jb4w5m6qzj.execute-api.us-east-2.amazonaws.com/projects/61046748b578adf1b8f96647'
                 }
             },
             autoLoad : true,
 
-            // The State TrackingManager which the UndoRedo widget in the toolbar uses
             stm: {
                 autoRecord : true
             }
@@ -43,6 +41,7 @@ const Gantt = props => {
             { type: 'wbs' },
             { type: 'name', width: 250 },
             { type: 'startdate' },
+            { type: 'enddate' },
             { type: 'duration' },
             { type: 'percentdone', showCircle: true, width: 70 },
             {
