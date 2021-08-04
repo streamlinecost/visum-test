@@ -59,14 +59,14 @@
     "rows" : [
       {
         "id": 1000,
-        "name": "CQV",
+        "name": "Launch Visum Test",
         "percentDone": 50,
         "startDate": "2021-06-14",
         "expanded": true,
         "children": [
           {
             "id": 1,
-            "name": "Facility Systems",
+            "name": "Setup Backend / AWS",
             "percentDone": 50,
             "duration": 10,
             "startDate": "2021-06-14",
@@ -76,7 +76,7 @@
             "children": [
               {
                 "id": 11,
-                "name": "Compressed Air",
+                "name": "Configure DocumentDB",
                 "percentDone": 50,
                 "startDate": "2021-06-14",
                 "rollup": true,
@@ -87,7 +87,7 @@
               },
               {
                 "id": 12,
-                "name": "Solvent Distribution System",
+                "name": "Configure CRUD API",
                 "percentDone": 50,
                 "startDate": "2021-06-14",
                 "rollup": true,
@@ -98,7 +98,7 @@
               },
               {
                 "id": 13,
-                "name": "Process Cold Water",
+                "name": "Configure Cognito authentication",
                 "percentDone": 50,
                 "startDate": "2021-06-14",
                 "rollup": true,
@@ -108,7 +108,7 @@
               },
               {
                 "id": 14,
-                "name": "Process Hot Water",
+                "name": "Configure API Gateway, Routing, REST API, Auth",
                 "percentDone": 50,
                 "startDate": "2021-06-14",
                 "rollup": true,
@@ -118,7 +118,7 @@
               },
               {
                 "id": 15,
-                "name": "Emergency Power",
+                "name": "Run tests",
                 "percentDone": 0,
                 "startDate": "2021-06-21",
                 "rollup": true,
@@ -130,7 +130,7 @@
           },
           {
             "id": 2,
-            "name": "Process Equipment",
+            "name": "Setup Frontend",
             "percentDone": 60,
             "startDate": "2021-06-23",
             "rollup": true,
@@ -139,7 +139,7 @@
             "children": [
               {
                 "id": 21,
-                "name": "BLD-150 Spray Dryer",
+                "name": "Create React App",
                 "percentDone": 70,
                 "startDate": "2021-06-23",
                 "rollup": true,
@@ -149,7 +149,7 @@
               },
               {
                 "id": 22,
-                "name": "200L Tank",
+                "name": "Deploy client side files and REST functions via npm + AWS extensions",
                 "percentDone": 60,
                 "startDate": "2021-06-30",
                 "rollup": true,
@@ -159,7 +159,7 @@
               },
               {
                 "id": 23,
-                "name": "Ktron X2 Feeder",
+                "name": "Setup S3 client side file hosting",
                 "percentDone": 50,
                 "startDate": "2021-06-31",
                 "rollup": true,
@@ -170,7 +170,7 @@
               },
               {
                 "id": 24,
-                "name": "Gerteis Mini-Pactor",
+                "name": "Setup hosting",
                 "percentDone": 0,
                 "startDate": "2021-06-04",
                 "rollup": true,

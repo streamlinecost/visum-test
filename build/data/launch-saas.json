@@ -3,7 +3,7 @@
 
   "project" : {
     "calendar"     : "general",
-    "startDate"    : "2021-06-14",
+    "startDate"    : "2019-01-14",
     "hoursPerDay"  : 24,
     "daysPerWeek"  : 5,
     "daysPerMonth" : 20
@@ -59,14 +59,14 @@
     "rows" : [
       {
         "id": 1000,
-        "name": "CQV",
+        "name": "Launch SaaS Product",
         "percentDone": 50,
         "startDate": "2019-01-14",
         "expanded": true,
         "children": [
           {
             "id": 1,
-            "name": "Facility Systems",
+            "name": "Setup web server",
             "percentDone": 50,
             "duration": 10,
             "startDate": "2019-01-14",
@@ -76,7 +76,7 @@
             "children": [
               {
                 "id": 11,
-                "name": "Compressed Air",
+                "name": "Install Apache",
                 "percentDone": 50,
                 "startDate": "2019-01-14",
                 "rollup": true,
@@ -101,7 +101,7 @@
               },
               {
                 "id": 12,
-                "name": "Solvent Distribution System",
+                "name": "Configure firewall",
                 "percentDone": 50,
                 "startDate": "2019-01-14",
                 "rollup": true,
@@ -126,7 +126,7 @@
               },
               {
                 "id": 13,
-                "name": "Process Cold Water",
+                "name": "Setup load balancer",
                 "percentDone": 50,
                 "startDate": "2019-01-14",
                 "rollup": true,
@@ -150,7 +150,7 @@
               },
               {
                 "id": 14,
-                "name": "Process Hot Water",
+                "name": "Configure ports",
                 "percentDone": 50,
                 "startDate": "2019-01-14",
                 "rollup": true,
@@ -174,7 +174,7 @@
               },
               {
                 "id": 15,
-                "name": "Emergency Power",
+                "name": "Run tests",
                 "percentDone": 0,
                 "startDate": "2019-01-21",
                 "rollup": true,
@@ -214,7 +214,7 @@
           },
           {
             "id": 2,
-            "name": "Process Equipment",
+            "name": "Website Design",
             "percentDone": 60,
             "startDate": "2019-01-23",
             "rollup": true,
@@ -223,7 +223,7 @@
             "children": [
               {
                 "id": 21,
-                "name": "PROC-045 BLD-150 Spray Dryer",
+                "name": "Contact designers",
                 "percentDone": 70,
                 "startDate": "2019-01-23",
                 "rollup": true,
@@ -247,7 +247,7 @@
               },
               {
                 "id": 22,
-                "name": "200L Tank",
+                "name": "Create shortlist of three designers",
                 "percentDone": 60,
                 "startDate": "2019-01-30",
                 "rollup": true,
@@ -271,7 +271,7 @@
               },
               {
                 "id": 23,
-                "name": "Ktron X2 Feeder",
+                "name": "Select & review final design",
                 "percentDone": 50,
                 "startDate": "2019-01-31",
                 "rollup": true,
@@ -296,7 +296,7 @@
               },
               {
                 "id": 24,
-                "name": "Gerteis Mini-Pactor",
+                "name": "Inform management about decision",
                 "percentDone": 100,
                 "startDate": "2019-02-04",
                 "rollup": true,
@@ -319,7 +319,7 @@
               },
               {
                 "id": 25,
-                "name": "18mm Leistritz Extruder",
+                "name": "Apply design to web site",
                 "percentDone": 0,
                 "startDate": "2019-02-04",
                 "rollup": true,
